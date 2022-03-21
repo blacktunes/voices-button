@@ -25,6 +25,8 @@ $btn-text-color = #5F505F
 $title-color = #5F505F
 <!-- 夜间模式控制栏文字颜色 -->
 $title-color-dark = #999999
+<!-- 控制栏按钮active颜色 -->
+$icon-active-color = #ff9488
 <!-- 按钮hover颜色 -->
 $hover-color = #bbc5cf
 <!-- 按钮active颜色 -->
@@ -35,6 +37,10 @@ $active-color = #93a3b3
 
 ```jsonc
 {
+  // 是否使用多语言
+  "i18n": true,
+  // 是否使用猫耳按钮
+  "neko_mimi": true,
   "name": {
     "CN": {
       // Header和网站名
@@ -57,6 +63,8 @@ $active-color = #93a3b3
     "twitter": "",
     "bilibili": ""
   },
+  // 相关链接，格式与友链相同
+  "related": [],
   // 友链列表
   "link": [
     {

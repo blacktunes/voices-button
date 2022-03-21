@@ -1,5 +1,6 @@
 const path = require('path')
 const Check = require('./plugins/check')
+const Voives = require('./plugins/voices')
 
 process.env.VUE_APP_LAST_UPDATE = Date.now()
 
@@ -18,13 +19,11 @@ module.exports = {
       }
     }
   },
-  configureWebpack: config => {
-    if (process.env.NODE_ENV === 'production') {
-      config.optimization.minimizer[0].options.terserOptions.compress.pure_funcs = ['console.info']
-    }
+  configureWebpack: () => {
     return {
       plugins: [
-        new Check()
+        new Check(),
+        new Voives()
       ],
       performance: {
         hints: false
