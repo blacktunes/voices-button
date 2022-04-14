@@ -1,0 +1,30 @@
+version: "3"
+services:
+    voices_button:
+      build:
+          context: .
+          dockerfile: ./Dockerfile
+      container_name: voices_button 
+      restart: always
+      environment:
+            - TZ=Asia/Shanghai
+      volumes:
+              - ./plugins:/voices-button/plugins
+              - ./public:/voices-button/public
+              - ./schema:/voices-button/schema
+              - ./setting:/voices-button/setting
+              - ./src:/voices-button/src
+              - ./package.json:/voices-button/package.json
+              - ./tsconfig.json:/voices-button/tsconfig.json
+              - ./yarn.lock:/voices-button/yarn.lock
+              - ./babel.config.js:/voices-button/babel.config.js
+              - ./vue.config.js:/voices-button/vue.config.js
+              - ./.browserslistrc:/voices-button/.browserslistrc
+              - ./.editorconfig:/voices-button/.editorconfig
+              - ./.eslintrc.js:/voices-button/.eslintrc.js
+      ports:
+          - "8080:8080"
+      working_dir: /voices-button
+      tty: true
+      command: ["yarn", "run", "serve"]
+
