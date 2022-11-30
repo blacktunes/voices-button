@@ -1,21 +1,13 @@
 [
   {
-    "name": "好耶",
-    "path": "好耶.mp3",
-    "date": "2020-11-25",
-    "translate": {
-      "zh-CN": "好耶",
-      "en-US": "Haoye"
-    },
-    "usePicture": {
-      "zh-CN": "好耶.jpg",
-      "en-US": "好耶.jpg"
-    },
+    "name": "mua",
+    "path": "mua.mp3",
+    "date": "2022-11-20",
     "category": "名言",
     "mark": {
-      "title": "【Hiiro Record】11.24 Tue.读棉花糖",
-      "time": "59:33~59:34",
-      "url": "https://www.bilibili.com/video/BV1gy4y1q7cC"
+      "title": "2022-11-20【纱依】出道纪念直播后日谈",
+      "time": "23:27~23:29",
+      "url": "https://www.bilibili.com/video/BV1Ad4y1b7un"
     }
   }
 ]
