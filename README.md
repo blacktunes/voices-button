@@ -71,7 +71,7 @@ $active-color = #93a3b3
       // 友链按钮名
       "name": "Hiiro按钮",
       // 友链地址
-      "url": "https: //hiiro.club/",
+      "url": "https://hiiro.club/",
       // 友链按钮颜色
       "background": "#F5C1BB",
       // 友链按钮文字颜色
